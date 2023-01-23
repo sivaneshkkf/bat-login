@@ -1,0 +1,247 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	background-image: url("/images/bat5.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+}
+
+main{
+	width: 1000px;
+	margin:10% auto 10px auto;
+	padding: 40px 40px 20px 40px;
+	border-radius: 5px;
+	box-shadow: -5px -5px 25px rgb(5, 5, 5);
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 50px;
+	
+}
+form{
+	width: 450px;
+}
+
+.heading{
+	font-size:30px;
+	font-weight:400;
+	text-align: left;
+	margin-bottom: 15px;
+}
+.heading h6{
+	color: gray;
+}
+
+
+
+
+/*input Name & Password & Gmail*/
+
+form input{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	outline: none;
+	border:1px solid lightgray;
+	font-size: 15px;
+}
+form .name, form .pass, form .gmail{
+	display: block;
+	margin-top: 50px;
+	position: relative;
+}
+
+form input[type="checkbox"]{
+	width: 18px;
+	height: 18px;
+}
+
+.checkbox{
+	display:flex;
+	align-items: center;
+	margin-top: 60px;
+}
+.checkbox label{
+	color: darkslategray !important;
+	font-size: 18px !important;
+}
+
+form span{
+	color: darkslategray;
+	font-size: 14px;
+	display: block;
+	margin:5px;
+}
+
+
+
+
+/*Anchor tag*/
+
+form a, .a{
+	text-decoration: none;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: royalblue;
+
+}
+
+
+
+/*Button*/
+
+form button{
+	padding: 8px 25px;
+	background-color: royalblue;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.nextbutton{
+	margin: 60px 0;
+}
+
+
+
+
+/*input Label*/
+
+form label{
+	font-size: 16px;
+	color: darkslategray;
+
+}
+form small{
+	position:absolute;
+	right: 25px;
+	top:10px;
+	font-size: 18px;
+}
+
+.d-flex{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	position: relative;
+}
+
+
+
+
+/*Image*/
+
+
+form img{
+	width: 200px;
+	height: 50px;
+}
+
+
+/* Relative & absolute */
+
+form .name label, form .pass label, form .gmail label{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	cursor: text;
+}
+#passspan1{
+	position:absolute;
+	top: 95px;
+}
+
+
+/*hover effect*/
+
+form input, form label{
+	transition:all 0.2s;
+}
+
+.name span{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.name, .gmail, .pass{
+	width: 100%;
+	position: relative;
+}
+input:focus{
+	border: 2px solid royalblue;
+}
+ input:valid ~ label,
+ input:focus ~ label{
+ 	font-size: 14px;
+ 	background-color: white;
+ 	padding: 0 5px;
+	top: -10px;
+	color: royalblue;
+}
+
+
+.image{
+	width: 350px;
+	position: relative;
+}
+.image img{
+	width: 350px;
+}
+.image p{
+	position: absolute;
+	font-size: 20px;
+	text-shadow: 5px 5px 10px black;
+	top: 270px;
+	left: 25%;
+}
+
+
+
+.details{
+	width: 1000px;
+	margin:5px auto;
+}
+.details a{
+	color: whitesmoke;
+	font-size: 15px;
+	font-weight: 500;
+	margin-left: 5px;
+	text-decoration: none;
+}
+.details a:hover{
+	color: royalblue;
+	font-weight: bold;
+}
+
+
+/*Error Msg*/
+.error span, i{
+	color: red;
+	font-size: 15px;
+}
+.name ~.error{
+	position: absolute;
+	top: 90px;
+}
+
+form i{
+	margin-right: 5px;
+}
+.gmail .error{
+	position: absolute;
+	top: 45px;
+}
+.pass ~ .error{
+	position: absolute;
+	top: 90px;
+}
